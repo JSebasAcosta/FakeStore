@@ -1,0 +1,44 @@
+.barranav {
+    background-color: #87CEFA; /* Color de fondo azul claro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Espaciado interior */
+    max-height: 60px; /* Altura máxima de la barra de navegación */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: background-color 0.3s ease, max-height 0.3s ease; /* Transiciones suaves */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; /* Ancho de la imagen del logo, puedes ajustar este valor según tus necesidades */
+    height: auto;
+    margin-right: 10px; /* Espaciado derecho entre el logo y el texto */
+}
+
+.logo h1 {
+    color: white; /* Color del texto del logo */
+    font-size: 1.5rem; /* Tamaño de fuente del logo */
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaciado entre enlaces */
+}
+
+.links a {
+    text-decoration: none;
+    color: white; /* Color del texto de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.2rem; /* Tamaño de fuente de los enlaces */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón por encima */
+}

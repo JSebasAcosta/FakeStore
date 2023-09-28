@@ -1,0 +1,48 @@
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor principal */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Espaciado interior */
+}
+
+.barranav-container {
+    margin-bottom: 20px; /* Espaciado inferior debajo de la barra de navegación */
+}
+
+.card-detalle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.producto-image-detalle img {
+    max-width: 300px; /* Ancho máximo de la imagen */
+    height: auto;
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.detalle {
+    flex: 1; /* Ocupa el espacio restante en la tarjeta */
+    margin-left: 20px; /* Espaciado izquierdo entre la imagen y el contenido */
+}
+
+.carrito-button {
+    margin-top: 20px; /* Espaciado superior entre el botón y el contenido */
+}
+
+.carrito-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Color de fondo del botón */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.carrito-button a:hover {
+    background-color: #0056b3; /* Cambia de color al pasar el ratón por encima */
+}

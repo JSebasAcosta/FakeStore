@@ -1,0 +1,37 @@
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.card {
+    width: calc(50% - 20px); /* Establece el ancho de cada tarjeta para dos por fila */
+    margin: 10px; /* Espaciado entre tarjetas */
+    border: 1px solid #ccc; /* Borde de 1px de ancho con color gris */
+    padding: 10px; /* Espaciado interno de la tarjeta */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Añadir estilos a las imágenes y detalles dentro de la tarjeta */
+.card .image {
+    text-align: center;
+}
+
+.card .image img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+}
+
+.card .detalles {
+    padding: 10px;
+}
+
+/* Estilos adicionales según sea necesario */
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); /* Ancho completo en dispositivos pequeños */
+    }
+}
