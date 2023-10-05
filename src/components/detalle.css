@@ -18,7 +18,7 @@
     border-radius: 5px;
 }
 
-.producto-image-detalle img {
+.product-image-detalle img {
     max-width: 300px; /* Ancho máximo de la imagen */
     height: auto;
     display: block; /* Asegura que la imagen sea un elemento de bloque */

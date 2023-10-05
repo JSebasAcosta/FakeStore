@@ -4,23 +4,26 @@ import Tienda from './components/tienda';
 import Carrito from './components/carrito';
 import Detalle from './components/detalle';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { AppProvider } from './AppContext';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="app">
-        <Routes>
-          <Route
-          path="/"
-          element={<Tienda />} />
-          <Route
-          path="/carrito"
-          element={<Carrito />} />
-          <Route
-          path="/productos/:id"
-          element={<Detalle />} />
-      </Routes>
-      </div>
+      <AppProvider>
+        <div className="app">
+          <Routes>
+            <Route
+            path="/"
+            element={<Tienda />} />
+            <Route
+            path="/carrito"
+            element={<Carrito />} />
+            <Route
+            path="/products/:id"
+            element={<Detalle />} />
+        </Routes>
+        </div>
+      </AppProvider>
     </BrowserRouter>
   )
 }

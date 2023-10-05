@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './carrito.css';
 import BarraNav from './barranav';
+import {useAppContext} from '../AppContext';
 
 function Carrito() {
-    const carritoItems = JSON.parse(localStorage.getItem('carrito')) || [];
+    
+    const { state } = useAppContext();
   
     return (
       <div className='container'>
@@ -13,18 +15,18 @@ function Carrito() {
         </div>
         <div className='carrito-container'>
           <h2>Carrito de Compras</h2>
-            {carritoItems.map((producto) => (
-              <li key={producto.id} className='card'>
+            {state.cart.map((product) => (
+              <li key={product.id} className='card'>
                 <div className="image">
-                  <div className="producto-image">
-                    <img src={producto.image} alt={producto.title} />
+                  <div className="product-image">
+                    <img src={product.image} alt={product.title} />
                   </div>
                 </div>
                 <div className="detalles">
-                  <h2>{producto.title}</h2>
-                  <p>Precio: ${producto.price}</p>
-                  <p>Categoría: {producto.category}</p>
-                  <Link to={`/productos/${producto.id}`}>Ver Detalles</Link>
+                  <h2>{product.title}</h2>
+                  <p>Precio: ${product.price}</p>
+                  <p>Categoría: {product.category}</p>
+                  <Link to={`/products/${product.id}`}>Ver Detalles</Link>
                 </div>
               </li>
             ))}
